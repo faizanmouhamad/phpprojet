@@ -167,20 +167,20 @@
        <input type="radio" name="mixite" value="M"> Mixt<br><br></label>
   <br><br>
     </div>
-    <div class="section"><span>3</span>Avatar</div>
+    <div class="section"><span>3</span>Logo</div>
         <div class="inner-wrap">
                
            
           
           <table style="width:400px;">
             <tr>
-<td> <input type="radio" name="photo" value="logo1" id="image1" required/> <label for="image1" ><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/avatar/athle.png"  />
+<td> <input type="radio" name="photo" value="logo1" id="image1" required/> <label for="image1" ><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/basket.png"  />
 </label></td>
-<td>  <input type="radio" name="photo" value="logo2" id="image1" required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/avatar/baseball.png"  />
+<td>  <input type="radio" name="photo" value="logo2" id="image1" required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/foot.jpg"  />
 </label></td>
-              <td><input type="radio" name="photo" value="logo3" id="image1"required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/avatar/boxe.png"  />
+              <td><input type="radio" name="photo" value="logo3" id="image1"required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/golf.jpg"  />
 </label></td>
-              <td><input type="radio" name="photo" value="logo4" id="image1"required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/avatar/foot.png"  />
+              <td><input type="radio" name="photo" value="logo4" id="image1"required/> <label for="image1"><img style="width:80px;"src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/footus.jpg"  />
 </label></td>
 </tr>
           </table>

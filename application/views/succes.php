@@ -1,7 +1,9 @@
 
 <?php
 header( "refresh:5; url=http://dwarves.iut-fbleau.fr/~mouhamad/sport/index.php" );
+
 ?>
+
 
 
 <!DOCTYPE html>

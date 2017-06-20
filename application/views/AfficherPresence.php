@@ -109,6 +109,7 @@
 <body>
   <form action="<?php echo site_url('PresenceList/index'); ?>" method="POST" id="coach"> 
       <div class="form-style-10">
+              <a href="<?php echo site_url('Liens/menu'); ?>"><img id="homeback" src='http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/homa.png' style="width:42px;float: right;position: inherit;margin-top: 22px;"/></a>
    <h1>Afficher la liste de presence
        <span>Rappel vous devez faire parti de l'equipe</span></h1>
     </div>

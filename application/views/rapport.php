@@ -37,7 +37,7 @@ div.desc {
    Rapport de notre projet
   </h1>
   
-  <p>Cette application a été réalisé dans le cadre d'un projet scolaire par Faizan Mouhamad et Valentin Desseux. 
+  <p>Cette application a été réalisée dans le cadre d'un projet scolaire par Faizan Mouhamad et Valentin Desseux. 
   </p>
   <div style='height:330px;'>
   <div class="gallery">

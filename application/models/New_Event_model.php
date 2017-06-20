@@ -18,7 +18,7 @@ foreach($ne as $is){
       }
       public function create_event($datar){
           $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
-  $res=mysqli_query($conn,"SELECT nomE,lieux,dateE,hdebut,hfin,typeE,descriptionE FROM Evenement");
+  $res=mysqli_query($conn,"SELECT nomE,lieux,dateE,hdebut,hfin,typeE FROM Evenement");
         $nomE=$datar['nomE'];
 $lieux=$datar['lieux'];
 $date=$datar['dateE'];
@@ -26,13 +26,24 @@ $debut=$datar['hdebut'];
 $fin=$datar['hfin'];
 $type=$datar['typeE'];
 $description=$datar['descriptionE'];
+        $ba=true;
+        foreach($res as $r){
+          if($nomE==$r['nomE'] AND $lieux==$r['lieux'] AND $date=$r['dateE'] AND $debut==$r['hdebut'] AND $fin==$r['hfin'] AND $type==$r['typeE']){
+            $ba=false;
+          }
+        }
         $insert="Insert into Evenement (nomE,lieux,dateE,hdebut,hfin,typeE,descriptionE) VALUES ('$nomE','$lieux','$date','$debut','$fin','$type','$description')";
 
+        if($ba == true){
           if(mysqli_query($conn,$insert)){
 return true;
           }else{
 return false;
           }
+        }
+        else{
+          return false;
+        }
         
 //   $ba = true;
 //         foreach($res as $value){

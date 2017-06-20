@@ -40,7 +40,13 @@ margin-bottom:20px;
       #fra0{
         margin:auto;
         display:block;
-        width:100px;
+        width:80px;
+      }
+       #fraa0{
+        margin:auto;
+        display:block;
+        width:80px;
+         margin-top:19px;
       }
       .fra3{
         width: 185px;
@@ -58,24 +64,36 @@ height: 185px;
 text-align: center;
 border: 2px solid transparent;
 border-radius: 18px;
-margin-bottom:20px;
-        margin-left:500px;
-        margin-top:-210px;
+        margin-left:910px;
+        margin-top:-170px;
       }
 #fra,#fra1,#fra2,#fra3,#fra4 {
 margin: auto;
 display: block;
 width: 150px;
 }
-#fra:hover,#fra1:hover,#fra2:hover,#fra3:hover,#fra4:hover, #fra0:hover {
+      .fra5{
+        width: 185px;
+height: 185px;
+text-align: center;
+border: 2px solid transparent;
+border-radius: 18px;
+        margin-top:-170px;
+      }
+#fra,#fra1,#fra2,#fra3,#fra4 {
+margin: auto;
+display: block;
+width: 150px;
+}
+#fra:hover,#fra1:hover,#fra2:hover,#fra3:hover,#fra4:hover, #fra0:hover, #fraa0:hover {
 transform: scale(1.15);
 }
 .sip {
 border: 1px solid transparent;
-width: 880px;
+width: 1075px;
   margin:auto;
   display:block;
-  margin-left:145px;
+  margin-left:35px;
 }
     </style>
   </head>
@@ -100,6 +118,17 @@ Désigner un entraîneur
             <a href="<?php echo site_url('Liens/team'); ?>"><img id="fra2" alt="description" src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/CreerEquipe.png"/></a>
             <p id="k2">
                Créer une équipe
+            </p>
+         </div>
+      <div class="fra5">
+            <a href="<?php echo site_url('Liens/list_presence'); ?>"><img id="fraa0" alt="description" src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/bluelist.png"/></a>
+            <p id="k1">
+Afficher la liste des présents            </p>
+         </div>
+       <div class="fra4">
+            <a href="<?php echo site_url('Liens/presence'); ?>"><img id="fra0" alt="description" src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/present.png"/></a>
+            <p id="k1">
+Indiquer sa présence
             </p>
          </div>
      

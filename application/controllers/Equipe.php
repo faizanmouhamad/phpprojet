@@ -31,6 +31,7 @@ class Equipe extends CI_Controller {
 			$mdp = $this->input->post('mdpE');
 			$mixite = $this->input->post('mixite');
       $admin = $this->input->post('login');//fr avec la session
+			$logo= $this->input->post('photo');
 
 			$dataE=array(
 				'nomE'=>$nom,
@@ -40,6 +41,7 @@ class Equipe extends CI_Controller {
         'description'=>$comment,
         'mixite'=>$mixite,
         'Admin'=> $admin,
+				'logoE'=>$logo,
 				
 				);
 				if	($this->Equipe_model->create_team($dataE)){

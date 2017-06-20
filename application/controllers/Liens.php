@@ -35,7 +35,12 @@
       public function rapport(){
             $this->load->view("rapport");   
       }
-    	
+    	public function presence(){
+                    $this->load->view("view_presence");   
+      }
+      public function list_presence(){
+                            $this->load->view("AfficherPresence");   
+      }
     	public function inscription() {
     		$this->load->view('vue');
     		

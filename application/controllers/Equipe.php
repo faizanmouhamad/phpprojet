@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 class Equipe extends CI_Controller {
 
 	public function index(){
@@ -30,8 +30,9 @@ class Equipe extends CI_Controller {
 			$comment = $this->input->post('comment');
 			$mdp = $this->input->post('mdpE');
 			$mixite = $this->input->post('mixite');
-      $admin = $this->input->post('login');//fr avec la session
+//       $admin = $this->input->post('login');//fr avec la session
 			$logo= $this->input->post('photo');
+			$admin = $_SESSION['logina'];
 
 			$dataE=array(
 				'nomE'=>$nom,

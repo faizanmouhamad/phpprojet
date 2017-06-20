@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Rejoindre extends CI_Controller {
@@ -12,8 +12,9 @@ class Rejoindre extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('Rejoindre_model');
     
-    $login=$_POST['login'];
-    $mdp=$_POST['mdp'];
+//     $login=$_POST['login'];
+		$login=$_SESSION['logina'];
+    //$mdp=$_POST['mdp'];
     $nomE=$_POST['nomE'];
     $pswdE=$_POST['mdpE'];
     $bool=false;
@@ -22,12 +23,12 @@ class Rejoindre extends CI_Controller {
 		
 		$connexion=array(
 			'loginU'=>$login,
-			'pswdU'=>$mdp,
+		//	'pswdU'=>$mdp,
       'nomE'=>$nomE,
       'pswdE'=>$pswdE,
 		);
     
-        if($this->Rejoindre_model->verif1($connexion,$bool,$boolc)){
+       // if($this->Rejoindre_model->verif1($connexion,$bool,$boolc)){
     if($this->Rejoindre_model->verif($connexion,$bool,$boolc)){
         $data=array(
         'loginM'=>$login,
@@ -53,13 +54,13 @@ $message='Une erreur est survenue ! Veuillez vérifier les données saisis ! ';
 									$this->load->view('JoinEquipe');
 					}
               
-		}
-    else{
-$message='Une erreur est survenue ! Veuillez vérifier les données saisis ! ';
+//		}
+//     else{
+// $message='Une erreur est survenue ! Veuillez vérifier les données saisis ! ';
  
-	echo '<script type="text/javascript">window.alert("'.$message.'");</script>';   
-						$this->load->view('JoinEquipe');
-		}
+// 	echo '<script type="text/javascript">window.alert("'.$message.'");</script>';   
+// 						$this->load->view('JoinEquipe');
+// 		}
 	}
 }
 

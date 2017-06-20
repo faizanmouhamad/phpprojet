@@ -19,7 +19,7 @@ if($data['nomE']==$is['nomE'] AND $data['loginU']==$is['Admin']){
         return $boolA;
       }
       
-      public function verif_mdp($data,$bool){
+   /*   public function verif_mdp($data,$bool){
         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
 $mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
 foreach($mdpi as $value){
@@ -29,7 +29,7 @@ foreach($mdpi as $value){
   }
        return $bool; 
       }
-      
+     */ 
       public function verif_member($data,$boolN){
                 $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
         $zer = $data['nomE'];

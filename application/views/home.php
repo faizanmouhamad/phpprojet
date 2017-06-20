@@ -99,9 +99,9 @@ width: 1075px;
     </style>
   </head>
   <body>
-                 <a href="<?php echo site_url('Liens/deconnexion'); ?>"><img id="homeback" src='http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/logout.png' style="width:45px;float: right;margin-top: 23px;margin-right:65px;"/></a>
+     <a href="<?php echo site_url('Liens/deconnexion'); ?>"><img id="homeback" src='http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/logout.png' style="width:45px;float: right;margin-top: 23px;margin-right:65px;"/></a>
     <h1 style="text-align:center;border:2px solid transparent; height:75px;padding-top:22px;margin-top:20px">
-Vous pouvez désormais utiliser les fonctionnalités de l'app  </h1>
+Vous pouvez désormais utiliser les fonctionnalités de l'app !</h1>
     <div class="sip">
          <div class="fra1">
             <a href="<?php echo site_url('Liens/calendrier'); ?>"><img id="fra" alt="description"  src="http://dwarves.iut-fbleau.fr/~mouhamad/sport/assets/Calendar.png"/></a>

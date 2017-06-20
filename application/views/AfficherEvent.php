@@ -122,7 +122,7 @@
     <h1>Calendrier
        <span>Rappel pour acceder au calendrier vous devez faire parti de l'equipe</span></h1>
     </div>
-     <div class="section"><span>1</span>Vos Identifiants</div><br><br>
+<!--      <div class="section"><span>1</span>Vos Identifiants</div><br><br>
       <div class="inner-wrap">
      <label>Login:<br>
        <input type="text" name="login"placeholder="Login" required></label>
@@ -131,8 +131,8 @@
   <label>Mot de Passe:<br>
     <input type="password" name="mdp" placeholder="Mot de Passe" required></label>
   <br>
-     </div>
-     <div class="section"><span>2</span>Calendrier de cette equipe</div><br><br> 
+     </div> -->
+     <div class="section"><span>1</span>Calendrier de cette equipe</div><br><br> 
    <div class="inner-wrap">
      <label>Equipe concernee:<br>
        <select name="nomE">

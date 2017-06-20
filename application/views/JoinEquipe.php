@@ -120,7 +120,7 @@
        <span>Rappel pour rejoindre une equipe vous devez avoir un compte et le bon mot de passe d'inscription</span></h1>
     </div>
    <br>  
-    <div class="section"><span>1</span>Vos Identifiants</div><br><br>
+<!--     <div class="section"><span>1</span>Vos Identifiants</div><br><br> -->
 <!--      Nom:<br>
   <input type="text" name="nom" required>
     <br>
@@ -128,7 +128,7 @@
  Prenom:<br>
   <input type="text" name="prenom" required>
   <br> -->
- <div class="inner-wrap">
+<!--  <div class="inner-wrap">
      <label>Login:<br>
        <input type="text" name="login" required></label>
   <br>
@@ -136,9 +136,9 @@
   <label>Mot de Passe:<br>
     <input type="password" name="mdp" required></label>
   <br>
-     </div>
+     </div> -->
      
-      <div class="section"><span>2</span>Equipe a rejoindre</div><br><br>
+      <div class="section"><span>1</span>Equipe a rejoindre</div><br><br>
     <div class="inner-wrap">
      <label>Nom Equipe:<br><select name="nomE">
          <?php

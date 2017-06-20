@@ -16,8 +16,11 @@
     				->where('pswdU',$connexion['pswdU'])
     				->get()
     				->row_array();
-    		if(count($query) == 1)
+    		if(count($query) == 1){
+          session_start();
+          $_SESSION['logina']=$connexion['loginU'];
     			return $query;
+        }
     		else
     			return false;		
     	}

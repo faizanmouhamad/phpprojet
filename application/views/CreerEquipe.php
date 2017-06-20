@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -120,7 +122,7 @@
        <span>Rappel pour creer une equipe vous devez avoir un compte</span></h1>
     </div>
    <br><br>    
-    <div class="section"><span>1</span>Vos Identifiants</div><br><br>
+<!--     <div class="section"><span>1</span>Vos Identifiants</div><br><br> -->
 <!--      Nom:<br>
   <input type="text" name="nom" required>
     <br>
@@ -128,7 +130,7 @@
  Prenom:<br>
   <input type="text" name="prenom" required>
   <br> -->
- <div class="inner-wrap">
+<!--  <div class="inner-wrap">
      <label>Login:<br>
        <input type="text" name="login" placeholder="Login" required></label>
    
@@ -137,9 +139,9 @@
   <label>Mot de Passe:<br>
     <input type="password" name="mdp" placeholder="Mot de passe" required></label>
     </div>
-  <br><br>
+  <br><br> -->
     
-    <div class="section"><span>2</span>Equipe a creer</div><br><br>
+    <div class="section"><span>1</span>Equipe a creer</div><br><br>
     <div class="inner-wrap">
     <label>Nom Equipe:<br>
       <input type="text" name="nomE" placeholder="Nom de l'équipe" required></label>

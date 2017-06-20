@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Presence extends CI_Controller {
@@ -11,19 +11,16 @@ class Presence extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('Presence_model');
     
-$login=$_POST['login'];
-$mdp=$_POST['mdp'];
+//$login=$_POST['login'];
+//$mdp=$_POST['mdp'];
+		$login=$_SESSION['logina'];
 $e=$_POST['eve'];
 $here=$_POST['presence'];
 $bool=false;
 $boolA=false;
     
-    $data=array(
-   'loginU'=>$login,
-      'pswdU'=>$mdp,
-    );
     
-        if($this->Presence_model->verif_user($data,$bool)){
+       // if($this->Presence_model->verif_user($data,$bool)){
           if($this->Presence_model->verif_team($login,$boolA,$e)){
             $datal=array(
             'dateEF'=>$e,
@@ -45,11 +42,11 @@ $boolA=false;
           }
           
           
-        }
-    else{
-$message='Vous n\'êtes pas un utilisateur !';
+      //  }
+//     else{
+// $message='Vous n\'êtes pas un utilisateur !';
  
-	echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
-								$this->load->view('view_presence');    }
-  }
+// 	echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
+// 								$this->load->view('view_presence');    }
+//   }
 }

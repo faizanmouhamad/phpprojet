@@ -123,6 +123,10 @@ div.desc {
   <td style="border: 1px solid gray;">Modèle MVC</td>
    <td>Application web conçue en séparant les fonctions suivant les modèles, vues et contrôleurs. Création d'urls via le maniement du routage.  </td>
   </tr>
+    <tr style="border: 1px solid gray;">
+  <td style="border: 1px solid gray;">Sessions</td>
+   <td>Utilisation de sessions lors de la connexion et de la déconnexion.  </td>
+  </tr>
   </table>
   <br>
 </body>

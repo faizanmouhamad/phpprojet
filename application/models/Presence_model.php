@@ -7,17 +7,17 @@
     		$this->load->database();
     	}
       
-      public function verif_user($data,$bool){
-        $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
-        $mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
+//       public function verif_user($data,$bool){
+//         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
+//         $mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
         
-        foreach($mdpi as $is){
-   if($data['loginU']==$is['loginU'] AND $data['pswdU']==$is['pswdU']){
-    $bool=true;
-      }
-  }
-return $bool;
-      }
+//         foreach($mdpi as $is){
+//    if($data['loginU']==$is['loginU'] AND $data['pswdU']==$is['pswdU']){
+//     $bool=true;
+//       }
+//   }
+// return $bool;
+//       }
       
       public function verif_team($login,$boolA,$e){
         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");

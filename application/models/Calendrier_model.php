@@ -24,17 +24,17 @@ $faiz=mysqli_query($conn,"SELECT loginM,nomE FROM Membre");
   }
         return $bool;
       }
-      public function verif_pswd($datar,$boolA){
-           $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        
-$mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
+//       public function verif_pswd($datar,$boolA){
+//            $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        
+// $mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
         
-        foreach($mdpi as $value){
-    if($datar['loginU']==$value['loginU'] AND $datar['pswdU']==$value['pswdU']){
-      $boolA=true;
-    }
-  }
-        return $boolA;
-      }
+//         foreach($mdpi as $value){
+//     if($datar['loginU']==$value['loginU'] AND $datar['pswdU']==$value['pswdU']){
+//       $boolA=true;
+//     }
+//   }
+//         return $boolA;
+//       }
       
       public function draw_calendrier($zer){
                    $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        

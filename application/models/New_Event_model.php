@@ -8,9 +8,9 @@
     	}
       public function verif_coach($data,$bool){
         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
-$ne=mysqli_query($conn,"SELECT loginEn,nomE,pswdU FROM Entraineur, Utilisateur");
+$ne=mysqli_query($conn,"SELECT loginEn,nomE FROM Entraineur, Utilisateur");
 foreach($ne as $is){
-  if($data['nomE']==$is['nomE'] AND $data['loginU']==$is['loginEn'] AND $data['pswdU']==$is['pswdU']){
+  if($data['nomE']==$is['nomE'] AND $data['loginU']==$is['loginEn']){
     $bool=true;
   }
 } 

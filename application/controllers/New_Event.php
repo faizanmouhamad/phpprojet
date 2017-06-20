@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class New_Event extends CI_Controller {
@@ -10,8 +10,9 @@ class New_Event extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->model('New_Event_model');
-    $login=$_POST['login'];
-$mdp=$_POST['mdp'];
+    //$login=$_POST['login'];
+//$mdp=$_POST['mdp'];
+		$login=$_SESSION['logina'];
 $nomE=$_POST['nomE'];
 $lieux=$_POST['lieux'];
 $date=$_POST['date'];
@@ -23,7 +24,7 @@ $bool=false;
     
     $data=array(
     'nomE'=>$nomE,
-      'pswdU'=>$mdp,
+      //'pswdU'=>$mdp,
       'loginU'=>$login,
     );
     

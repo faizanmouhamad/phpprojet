@@ -114,7 +114,7 @@
        <span>Rappel vous devez faire parti de l'equipe</span></h1>
     </div>
    <br>
-    <div class="section"><span>1</span>Vos Identifiants</div><br><br> 
+<!--     <div class="section"><span>1</span>Vos Identifiants</div><br><br> 
       <div class="inner-wrap">
      <label>Login:<br>
        <input type="text" name="login" required></label>
@@ -123,8 +123,8 @@
   <label>Mot de Passe:<br>
     <input type="password" name="mdp" required></label>
   <br>
-     </div>
-      <div class="section"><span>2</span>Evenement</div><br><br>
+     </div> -->
+      <div class="section"><span>1</span>Evenement</div><br><br>
       <div class="inner-wrap">
      <label>Evenement:<br>
        <?php

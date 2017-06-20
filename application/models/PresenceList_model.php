@@ -14,27 +14,44 @@
     		parent::__construct();
     		$this->load->database();
     	}
-      public function verif_member($data,$bool){
+			public function verif_team($login,$boolA,$e){
         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
-$faiz=mysqli_query($conn,"SELECT loginM,nomE FROM Membre");
-        foreach($faiz as $is){
-   if($data['nomE']==$is['nomE'] AND $data['loginM']==$is['loginM']){
-  $bool=true;
-      }
-  }
-        return $bool;
-      }
-      public function verif_pswd($datar,$boolA){
-           $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        
-$mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
+    $priere=mysqli_query($conn,"SELECT nomE FROM Evenement where idEvent in ('$e')");
         
-        foreach($mdpi as $value){
-    if($datar['loginU']==$value['loginU'] AND $datar['pswdU']==$value['pswdU']){
-      $boolA=true;
-    }
-  }
-        return $boolA;
+        foreach($priere as $res){
+      $pt=$res['nomE'];
+      $team=mysqli_query($conn,"SELECT loginM FROM Membre where nomE in ('$pt')");
+      foreach($team as $resain){
+        if($login==$resain['loginM']){
+          $boolA=true;
+        }
       }
+    }
+        return $boolA;
+        
+      }
+//       public function verif_member($data,$bool){
+//         $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");
+// 				$e = $data['']
+// $faiz=mysqli_query($conn,"SELECT loginM,nomE FROM Membre");
+//         foreach($faiz as $is){
+//    if($data['nomE']==$is['nomE'] AND $data['loginM']==$is['loginM']){
+//   $bool=true;
+//       }
+//   }
+//         return $bool;
+//       }
+//       public function verif_pswd($datar,$boolA){
+//            $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        
+// $mdpi=mysqli_query($conn,"SELECT loginU, pswdU FROM Utilisateur");
+        
+//         foreach($mdpi as $value){
+//     if($datar['loginU']==$value['loginU'] AND $datar['pswdU']==$value['pswdU']){
+//       $boolA=true;
+//     }
+//   }
+//         return $boolA;
+//       }
       
       public function draw_list($zer){
                    $conn=mysqli_connect("dwarves.iut-fbleau.fr","mouhamad","mouhamad","mouhamad");        

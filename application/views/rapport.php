@@ -93,6 +93,8 @@ div.desc {
     <li>désigner un entraîneur,</li>
      <li>créer des evènements (entraînements/compétitions),</li>
    <li>accéder au calendrier (ensemble des evènements),</li>
+    <li>indiquer sa présence à un evènement,</li>
+    <li>accéder à la liste de présence d'un evènement.</li>
   </ul>
   <h3>
     IV. Notions vues en cours et dévelopées durant le projet
